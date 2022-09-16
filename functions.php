@@ -16,4 +16,12 @@ function load_js()
     wp_enqueue_script('js');
 }
 add_action('wp_enqueue_scripts','load_js');
+//theme options
+add_theme_support('menus' );
+
+//menu
+register_nav_menus(
+  array('top-menu' => 'top Menu location','mobile-menu' => 'Mobile Menu Location')
+
+  ); 
 ?>
